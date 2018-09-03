@@ -11,6 +11,7 @@ tags:
   - "math"
 ---
 
+### 例1
 ```
 $$
 T = S((1 + \frac{E}{R})^{F} - 1)
@@ -21,9 +22,58 @@ $$
 T = S((1 + \frac{E}{R})^{F} - 1)
 $$
 
+
+### 例2
 ```
 $T = S((1 + \frac{E}{R})^{F} - 1)$
 
 ```
 
 $T = S((1 + \frac{E}{R})^{F} - 1)$
+
+
+### 例3
+
+```
+$$
+\begin{align}
+\dot{x} & = \sigma(y-x) \newline
+\dot{y} & = \rho x - y - xz \newline
+\dot{z} & = -\beta z + xy
+\end{align}
+$$
+```
+
+$$
+\begin{align}
+\dot{x} & = \sigma(y-x) \newline
+\dot{y} & = \rho x - y - xz \newline
+\dot{z} & = -\beta z + xy
+\end{align}
+$$
+
+### 例4
+
+```
+$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$
+```
+
+$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$
+
+
+### 例5
+
+```
+$\sqrt[3]{a}$
+```
+$\sqrt[3]{a}$
+
+
+### 例6
+
+```
+$\int_{a}^{b}f(x)dx$
+```
+
+```
+$\int_{a}^{b}f(x)dx$
