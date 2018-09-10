@@ -9,3 +9,5 @@ Except on very simple problems, `RMSProp` optimizer almost always performs much 
 
 
 You can actually use a linear model to fit nonlinear data. A simple  way to do this is to add powers of each feature as new features, then train a linear model on this extended set of features. This technique is called `Polymonial Regression`
+
+

@@ -26,3 +26,11 @@ $$
 $$
 T = S((1 + \frac{E}{R})^{F} - 1)
 $$
+
+{{< highlight python >}}
+In [1]: print("hello")
+hello
+
+In [2]:
+{{< / highlight  >}}
+```
