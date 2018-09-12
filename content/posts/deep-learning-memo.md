@@ -40,3 +40,5 @@ remaining values.
 - `ANOVA` is the acronym for analysis of variance. You use ANOVA in situations where you want to compare the means of more than two populations. 
 
 - You can run into situations where the data being studied isn’t quantitative, but rather categorical — that is, the data represent categories, not measurements or counts. To study relationships in categorical data, you use a `Chi-square test` for independence. 
+
+- The `standard  error` of the mean is designated as: $\sigma_M$. It is the standard deviation of the sampling distribution of the mean. The formula for the standard error of the mean is: $\sigma_M = \frac{\sigma}{\sqrt{N}}$ . where $\sigma$ is the standard deviation of the original distribution and N is the sample size .
