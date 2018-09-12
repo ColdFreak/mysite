@@ -1,5 +1,5 @@
 ---
-title: "(WIP)統計や機械学習関連のメモ"
+title: "(WIP)統計&機械学習&画像関連のメモ"
 date: 2018-08-30T10:21:25+09:00
 draft: false
 authorbox: true # Optional, enable authorbox for specific post
@@ -12,12 +12,15 @@ tags:
 
 ---
 
+### Machine Learning
 
 - Except on very simple problems, `RMSProp` optimizer almost always performs much better than `AdaGrad`, It also generally performs better than Momentum optimization and Nesterov Accelerated Gradients. In fact, it was the preferred optimization algorithm of many researchers until Adam optimization came around.
 
 
 - You can actually use a linear model to fit nonlinear data. A simple  way to do this is to add powers of each feature as new features, then train a linear model on this extended set of features. This technique is called `Polymonial Regression`
 
+
+### Statistic
 
 - `Trimmed mean` = $\bar{x} = \frac{\sum_{i=p+1}^{n-p}x_i}{n-2p}$. A variation of the mean is a trimmed mean, which you calculate by dropping a fixed number of sorted values at each end and then taking an average of the
 remaining values.
@@ -42,3 +45,8 @@ remaining values.
 - You can run into situations where the data being studied isn’t quantitative, but rather categorical — that is, the data represent categories, not measurements or counts. To study relationships in categorical data, you use a `Chi-square test` for independence. 
 
 - The `standard  error` of the mean is designated as: $\sigma_M$. It is the standard deviation of the sampling distribution of the mean. The formula for the standard error of the mean is: $\sigma_M = \frac{\sigma}{\sqrt{N}}$ . where $\sigma$ is the standard deviation of the original distribution and N is the sample size .
+
+
+### Image processing
+
+- The `aspect ratio` of an image describes the proportional relationship between its width and its height. It is commonly expressed as two numbers separated by a colon, as in 16:9. For an x:y aspect ratio
