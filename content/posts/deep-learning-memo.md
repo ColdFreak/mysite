@@ -46,6 +46,8 @@ remaining values.
 
 - The `standard  error` of the mean is designated as: $\sigma_M$. It is the standard deviation of the sampling distribution of the mean. The formula for the standard error of the mean is: $\sigma_M = \frac{\sigma}{\sqrt{N}}$ . where $\sigma$ is the standard deviation of the original distribution and N is the sample size .
 
+- The  `t-distribution` is typically used to study the mean of a population, rather than to study the individuals within a population. For example, to estimate the average price of all the new homes in California. `t-distribution` is shorter and flatter than the `Z-distribution`. Its standard deviation is proportionally larger compared to the Z
+
 
 ### Image processing
 
