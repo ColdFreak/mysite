@@ -68,7 +68,7 @@ $$
   
 - One important way to assess how well the model fits is to use a statistic called the `coefficient of determination`, or $R^2$. This statistic takes the value of the correlation, $R$, and squares it to give you a percentage.
 $$R^2=1- \frac{\sum_{}{}(y_i - f_i)^2}{\sum{}{}(y_i - \bar{y})^2}$$
-$y_i$ is observed data and $f_i$ is the predicted data. $\bar{y}$ is the mean of the observed data. [link](https://ja.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E4%BF%82%E6%95%B0)
+$y_i$ is observed data and $f_i$ is the predicted data. $\bar{y}$ is the mean of the observed data. In simple linear regression, a high value of R2 means the line fits well, and a low value of R2 means the line doesn’t fit well. [link](https://ja.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E4%BF%82%E6%95%B0)
 
 - `Multicolinearity` is a term you use if two x variables are highly correlated. Not only is it redundant to include both related variables in the multiple regression model, but it’s also problematic. The bottom line is this  :**If two x variables are significantly correlated, only include one of them in the regression model, not both**. If you include both, the computer won’t know what numbers to give as coefficients for each of the two variables because they share their contribution to determining the value of y. Multicolinearity can really mess up the model- fitting process and give answers that are inconsistent and often not repeatable in subsequent studies.
 
