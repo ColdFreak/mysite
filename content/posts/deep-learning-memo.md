@@ -30,6 +30,7 @@ remaining values.
 - In the regression setting, the most commonly-used measure is the `mean squared error`(MSE), given by $MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2$
 
 - The formula for `standard deviation` (denoted by s) is as follows, where *n* equals the number of values in the data set, each x represents a number in the data set, and $\bar{x}$ is the average of all the data: $s = \sqrt{\sum{\frac{(x-\bar{x})^2}{n-1}}}$ . If your data have the form of normal distribution, about 95% of the data lie within two standard deviations of the mean. This result is called the empirical rule, or the 68–95–99.7% rule. 
+- The `Z-distribution` is a normal distribution with mean zero and standard deviation 1.
 
 - All hypothesis tests ultimately use a p-value to weigh the strength of the evidence.or example, suppose a pizza place claims their delivery times are 30 minutes or less on average but you think it’s more than that. You conduct a `hypothesis test` because you believe the `null hypothesis`, $H_o$ , that the mean delivery time is 30 minutes max, is incorrect. Your alternative hypothesis ($H_a$) is that the mean time is greater than 30 minutes. You randomly sample some delivery times and run the data through the hypothesis test, and your p-value turns out to be 0.001, which is much less than 0.05. You conclude that the pizza place is wrong;
 
@@ -47,6 +48,18 @@ remaining values.
 - The `standard  error` of the mean is designated as: $\sigma_M$. It is the standard deviation of the sampling distribution of the mean. The formula for the standard error of the mean is: $\sigma_M = \frac{\sigma}{\sqrt{N}}$ . where $\sigma$ is the standard deviation of the original distribution and N is the sample size .
 
 - The  `t-distribution` is typically used to study the mean of a population, rather than to study the individuals within a population. For example, to estimate the average price of all the new homes in California. `t-distribution` is shorter and flatter than the `Z-distribution`. Its standard deviation is proportionally larger compared to the Z
+
+- [`The Binomial Distribution`](https://www.mathsisfun.com/data/binomial-distribution.html) Example 1: Toss a fair coin 9 times ... what is the chance of getting 5 Heads? It's 
+$$C_{9}^{5} = \frac{5!}{5!(9-5)!} = \frac{126}{512}$$ . 
+Example 2: You sell sandwiches. 70% of people choose chicken, the rest choose something else. What is the probability of selling 2 chicken sandwiches to the next 3 customers? It's 
+
+$$
+p^k * (1-p)^{n-k}*C_{n}^{k} = \\\ 
+$$
+
+$$
+0.7^5 * (1-0.7)^{9-5}*C_{9}^{5}
+$$ 
 
 
 ### Image processing
