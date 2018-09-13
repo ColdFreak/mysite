@@ -59,7 +59,12 @@ $$
 
 $$
 0.7^5 * (1-0.7)^{9-5}*C_{9}^{5}
-$$ 
+$$
+
+- We measure the heights of 40 randomly chosen men, and get a mean height of 175cm, We also know the standard deviation of men's heights is 20cm, The [`95% Confidence Interval`](https://www.mathsisfun.com/data/confidence-interval.html) is $175cm \pm 6.2cm$ . A Confidence Interval is a range of values we are fairly sure our true value lies in. The 95% says that **95% of experiments like we just did** will include the true mean, but 5% won't. **For 95% the Z value** is *1.960*, use that Z in this formula for the Confidence Interval 
+  $$\bar{X} \pm Z\frac{s}{\sqrt{n}} = $$
+  $$175 \pm 1.960 * \frac{20}{\sqrt{40}}$$
+  So there is a 1-in-20 chance (5%) that our Confidence Interval does NOT include the true mean. The value after the $\pm$ is called the margin of error
 
 
 ### Image processing
