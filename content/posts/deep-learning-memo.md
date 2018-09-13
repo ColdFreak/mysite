@@ -72,6 +72,8 @@ $y_i$ is observed data and $f_i$ is the predicted data. $\bar{y}$ is the mean of
 
 - `Multicolinearity` is a term you use if two x variables are highly correlated. Not only is it redundant to include both related variables in the multiple regression model, but it’s also problematic. The bottom line is this  :**If two x variables are significantly correlated, only include one of them in the regression model, not both**. If you include both, the computer won’t know what numbers to give as coefficients for each of the two variables because they share their contribution to determining the value of y. Multicolinearity can really mess up the model- fitting process and give answers that are inconsistent and often not repeatable in subsequent studies.
 
+- The coefficient of an x variable in a multiple regression model is the amount by which y changes if that x variable increases by one unit and the values of all other x variables in the model don’t change. So basically, you’re looking at the marginal contribution of each x variable when you hold the other vari- ables in the model constant.
+
 
 
 
