@@ -52,3 +52,9 @@ remaining values.
 ### Image processing
 
 - The `aspect ratio` of an image describes the proportional relationship between its width and its height. It is commonly expressed as two numbers separated by a colon, as in 16:9. For an x:y aspect ratio
+
+### Others
+
+- [`Moore's law`](https://en.wikipedia.org/wiki/Moore%27s_law) is the observation that the number of transistors in a dense integrated circuit doubles about every two years.
+
+- In computer science, `Monte Carlo tree search (MCTS)` is a heuristic search algorithm for some kinds of decision processes, most notably those employed in game play. Two leading examples of Monte Carlo tree search are the computer game Total War: Rome II's implementation in their high level campaign AI and recent computer Go programs. [link](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search)
