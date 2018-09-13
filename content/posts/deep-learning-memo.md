@@ -70,6 +70,10 @@ $$
 $$R^2=1- \frac{\sum_{}{}(y_i - f_i)^2}{\sum{}{}(y_i - \bar{y})^2}$$
 $y_i$ is observed data and $f_i$ is the predicted data. $\bar{y}$ is the mean of the observed data. In simple linear regression, a high value of R2 means the line fits well, and a low value of R2 means the line doesn’t fit well. [link](https://ja.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E4%BF%82%E6%95%B0)
 
+- `R2 adjusted`: R2 adjusted takes the value of R2 and adjusts it downward according to the number of variables in the model. **The higher the number of variables in the model, the lower the value of R2 adjusted will be**, compared to the original R2.
+A high value of R2 adjusted means the model you have is fitting the data very well (the closer to 1, the better). I typically find a value of 0.70 to be considered okay for R2 adjusted, and the higher the better.
+Always use R2 adjusted rather than the regular R2 to assess the fit of a multiple regression model. 
+
 - `Multicolinearity` is a term you use if two x variables are highly correlated. Not only is it redundant to include both related variables in the multiple regression model, but it’s also problematic. The bottom line is this  :**If two x variables are significantly correlated, only include one of them in the regression model, not both**. If you include both, the computer won’t know what numbers to give as coefficients for each of the two variables because they share their contribution to determining the value of y. Multicolinearity can really mess up the model- fitting process and give answers that are inconsistent and often not repeatable in subsequent studies.
 
 - The coefficient of an x variable in a multiple regression model is the amount by which y changes if that x variable increases by one unit and the values of all other x variables in the model don’t change. So basically, you’re looking at the marginal contribution of each x variable when you hold the other vari- ables in the model constant.
