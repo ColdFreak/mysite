@@ -65,6 +65,12 @@ $$
   $$\bar{X} \pm Z\frac{s}{\sqrt{n}} = $$
   $$175 \pm 1.960 * \frac{20}{\sqrt{40}}$$
   So there is a 1-in-20 chance (5%) that our Confidence Interval does NOT include the true mean. The value after the $\pm$ is called the margin of error
+  
+- One important way to assess how well the model fits is to use a statistic called the `coefficient of determination`, or $R^2$. This statistic takes the value of the correlation, $R$, and squares it to give you a percentage.
+$$R^2=1- \frac{\sum_{}{}(y_i - f_i)^2}{\sum{}{}(y_i - \bar{y})^2}$$
+$y_i$ is observed data and $f_i$ is the predicted data. $\bar{y}$ is the mean of the observed data. [link](https://ja.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E4%BF%82%E6%95%B0)
+
+
 
 
 ### Image processing
