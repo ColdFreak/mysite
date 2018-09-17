@@ -52,6 +52,8 @@ In [15]: train_labels = to_categorical(train_labels)
 In [16]: test_labels = to_categorical(test_labels)
 
 # fit the model to its training data
+# the network iterate on the training data in mini-batches of 128 samples, 5 times over
+# each iteration over all the training data is called an epoch
 In [17]: network.fit(train_images, train_labels, epochs=5, batch_size=128)
 Epoch 1/5
 2018-09-17 17:54:52.424286: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
