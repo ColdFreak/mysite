@@ -14,6 +14,8 @@ tags:
 
 ### Machine Learning
 
+- If you suspect your neural network is over fitting your data, that is you have a high variance problem, one of the first things you should try probably is regularization. The other way to address high variance, is to get more training data that's also quite reliable. 
+ 
 - Except on very simple problems, `RMSProp` optimizer almost always performs much better than `AdaGrad`, It also generally performs better than Momentum optimization and Nesterov Accelerated Gradients. In fact, it was the preferred optimization algorithm of many researchers until Adam optimization came around.
 
 
