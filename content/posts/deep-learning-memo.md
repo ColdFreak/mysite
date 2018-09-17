@@ -14,7 +14,11 @@ tags:
 
 ### Machine Learning
 
-- If you suspect your neural network is over fitting your data, that is you have a high variance problem, one of the first things you should try probably is `regularization`. The other way to address high variance, is to get more training data that's also quite reliable. 
+- If you suspect your neural network is over fitting your data, that is you have a high variance problem, one of the first things you should try probably is `regularization`. The other way to address high variance, is to get more training data that's also quite reliable. Model developers tune the overall impact of the regularization term by multiplying its value by a scalar known as lambda (also called the regularization rate). That is, model developers aim to do the following:
+
+$$
+minimize(Loss(Data|Model) + \lamda complexity(Model))
+$$
  
 - Except on very simple problems, `RMSProp` optimizer almost always performs much better than `AdaGrad`, It also generally performs better than Momentum optimization and Nesterov Accelerated Gradients. In fact, it was the preferred optimization algorithm of many researchers until Adam optimization came around.
 
