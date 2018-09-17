@@ -14,7 +14,7 @@ tags:
 
 ### Machine Learning
 
-- If you suspect your neural network is over fitting your data, that is you have a high variance problem, one of the first things you should try probably is `regularization`. The other way to address high variance, is to get more training data that's also quite reliable. Model developers tune the overall impact of the regularization term by multiplying its value by a scalar known as lambda (also called the regularization rate). That is, model developers aim to do the following:
+- If you suspect your neural network is over fitting your data, that is you have a high variance problem, one of the first things you should try probably is [`regularization`](https://developers.google.com/machine-learning/crash-course/regularization-for-simplicity/l2-regularization). The other way to address high variance, is to get more training data that's also quite reliable. Model developers tune the overall impact of the regularization term by multiplying its value by a scalar known as lambda (also called the regularization rate). That is, model developers aim to do the following:
 $$
 minimize(Loss(Data|Model) + \lambda complexity(Model))
 $$
