@@ -26,8 +26,10 @@ In [4]: from keras import layers
 
 In [5]: network = models.Sequential()
 
+# 最初の隠れ層は512を設定する, 活性化関数をReluを設定する
 In [6]: network.add(layers.Dense(512, activation="relu", input_shape=(28*28,)))
 
+# 出力10個、0-9まで１０個の出力あるから
 In [7]: network.add(layers.Dense(10, activation="softmax"))
 
 In [9]: network.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
