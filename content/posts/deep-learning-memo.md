@@ -25,6 +25,8 @@ tags:
 - `Trimmed mean` = $\bar{x} = \frac{\sum_{i=p+1}^{n-p}x_i}{n-2p}$. A variation of the mean is a trimmed mean, which you calculate by dropping a fixed number of sorted values at each end and then taking an average of the
 remaining values.
 
+`Variance` is the amount that the estimate of the target function will change if different training data was used. $s^2 = \frac{1}{n}\sum_{i=1}{n}(x_i - \bar{x})^2$
+
 - `Standardization`, also called *normalization*, puts all variables on similar scales by subtracting the mean and dividing by the standard deviation. $Z = \frac{X-\bar{X}}{S}$
 
 - In the regression setting, the most commonly-used measure is the `mean squared error`(MSE), given by $MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2$
