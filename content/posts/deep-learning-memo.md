@@ -41,12 +41,14 @@ remaining values.
 
 - All hypothesis tests ultimately use a p-value to weigh the strength of the evidence.or example, suppose a pizza place claims their delivery times are 30 minutes or less on average but you think it’s more than that. You conduct a `hypothesis test` because you believe the `null hypothesis`, $H_o$ , that the mean delivery time is 30 minutes max, is incorrect. Your alternative hypothesis ($H_a$) is that the mean time is greater than 30 minutes. You randomly sample some delivery times and run the data through the hypothesis test, and your p-value turns out to be 0.001, which is much less than 0.05. You conclude that the pizza place is wrong;
 
-
 - The `Empirical Rule` says that if a population has a normal distribution with population mean $\mu$ and standard deviation $\sigma$, then:
  - About 68% of the values lie within 1 standard deviation of the mean (or between the mean minus 1 times the standard deviation, and the mean plus 1 times the standard deviation). In statistical notation, this is represented as $\mu \pm 1\sigma$ .
  - About 95% of the values lie within 2 standard deviations of the mean (or between the mean minus 2 times the standard deviation, and the mean plus 2 times the standard deviation). The statistical notation for this is $\mu \pm 2\sigma$ .
  - About 99.7% of the values lie within 3 standard deviations of the mean (or between the mean minus 3 times the standard deviation and the mean plus 3 times the standard deviation). Statisticians use the following notation to represent this: $\mu \pm 3\sigma$ .
 
+- One of the most common tests in statistics, the `t-test`, is used to determine whether the means of two groups are equal to each other. The assumption for the test is that both groups are **sampled from normal distributions with equal variances**.
+
+- You want to compare the watermelon seed-spitting distances of female and male adults. Your data set includes ten people from each group. The mean spitting distance for female was 47.8 inches; the mean for males was 56.5 inches; and the difference(females - males) is -8.71 inches, meaning the females in the sample spit seeds at shorter distances, on average, than the males. The `t-statistic` for the difference in the two means is t = -2.23, which has a **p-value** of 0.039. At a level of $\alpha=0.05$, this difference is significant(because 0.039 < 0.05). You conclude that males and females differ with respect to their mean watermelon seed-spitting distance.
 
 - `ANOVA` is the acronym for analysis of variance. You use ANOVA in situations where you want to compare the means of more than two populations. 
 
