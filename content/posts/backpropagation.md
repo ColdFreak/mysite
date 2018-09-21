@@ -17,6 +17,7 @@ tags:
 もっともシンプルの例で、猫なのか、猫じゃないなのかを判断するただ一層のニューラルネットワークで、一枚の画像で訓練するとします。下の図で仕組みを表しています。
 
 ![png](../../backpropagation/backpropagation.png) 
+![png](../../backpropagation/backpropagation.png)
 
 上の図では
 
