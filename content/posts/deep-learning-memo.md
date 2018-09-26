@@ -24,6 +24,8 @@ $$
 
 - You can actually use a linear model to fit nonlinear data. A simple  way to do this is to add powers of each feature as new features, then train a linear model on this extended set of features. This technique is called `Polymonial Regression`
 
+- t-Distributed Stochastic Neighbor Embedding (`t-SNE`) is a non-linear technique for dimensionality reduction that is particularly well suited for the visualization of high-dimensional datasets. It is extensively applied in image processing, NLP, genomic data and speech processing. 
+
 
 ### Statistic
 
