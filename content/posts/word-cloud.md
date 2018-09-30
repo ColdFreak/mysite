@@ -12,7 +12,7 @@ tags:
   - "wordcloud"
 ---
 
-ワインのレビューを使って、word cloudを作成する。
+[ワインのレビュー](https://github.com/davestroud/Wine/blob/master/winemag-data-130k-v2.csv)を使って、word cloudを作成する。
 
 レビュー全体のword cloudを作る
 
