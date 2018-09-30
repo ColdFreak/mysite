@@ -1,5 +1,5 @@
 ---
-title: "Linear Regression Using Tensorflow"
+title: "TensorflowでLinear Regressionをテストする"
 date: "2018-09-30T22:40:22+09:00"
 draft: false
 disable_comments: false # Optional, disable Disqus comments if true
