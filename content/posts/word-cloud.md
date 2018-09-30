@@ -2,6 +2,7 @@
 title: "Word Cloud"
 date: "2018-09-30T11:22:50+09:00"
 draft: false
+readmore: true # Show "Read more" button in list if true
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: true # Optional, enable Table of Contents for specific post

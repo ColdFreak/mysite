@@ -2,6 +2,7 @@
 title: "ベイズ公式メモ"
 date: 2018-07-10T08:27:25+09:00
 draft: false
+readmore: true # Show "Read more" button in list if true
 ---
 
 

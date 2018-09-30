@@ -2,6 +2,7 @@
 title: "Pod中からKubernetesのAPI Serverに認証"
 date: 2018-07-06T18:21:04+09:00
 draft: false
+readmore: true # Show "Read more" button in list if true
 ---
 
 ### 概要
