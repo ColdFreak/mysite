@@ -22,7 +22,7 @@ tags:
 画像などの座標位置とか3次元グラフのX,Y軸の座標とかのIndexに使われるmeshgridを生成する。
 つまり(0,0),(0,1)....(1,0),(1,1)....のようなデータを作るのにも使われます。
 
-一つの例$Z =  X * np.exp(-X**2-Y**2) -1$を通して、meshgridのイメージをつかむ。
+一つの例 $Z =  X * np.exp(-X^2-Y^2) -1$ を通して、meshgridのイメージをつかむ。
 
 {{< highlight python >}}
 import numpy as np
