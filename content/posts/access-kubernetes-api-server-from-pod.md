@@ -3,6 +3,15 @@ title: "Pod中からKubernetesのAPI Serverに認証"
 date: 2018-07-06T18:21:04+09:00
 draft: false
 readmore: true # Show "Read more" button in list if true
+disable_comments: false # Optional, disable Disqus comments if true
+authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
+categories:
+  - "kubernetes"
+tags:
+  - "kubernetes"
+  - "client-go"
 ---
 
 ### 概要

@@ -2,6 +2,14 @@
 title: "Kubernetesに既存のDeploymentをGolangで削除"
 date: 2018-07-04T15:31:07+09:00
 draft: false
+disable_comments: false # Optional, disable Disqus comments if true
+authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
+categories:
+  - "kubernetes"
+tags:
+  - "kubernetes"
 ---
 
 Kubernetesの`Deployment`を削除するときに`DeletionPropagation`を設定する必要があるようです。

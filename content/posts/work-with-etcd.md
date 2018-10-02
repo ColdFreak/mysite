@@ -2,6 +2,16 @@
 title: "DockerコンテナでEtcd3を動かす"
 date: 2018-07-18T18:25:26+09:00
 draft: false
+disable_comments: false # Optional, disable Disqus comments if true
+authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
+categories:
+  - "docker"
+  - "etcd"
+tags:
+  - "docker"
+  - "etcd"
 ---
 
 

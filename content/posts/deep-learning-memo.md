@@ -9,6 +9,8 @@ categories:
   - "math"
 tags:
   - "math"
+  - "deep learning"
+  - "statistics"
 
 ---
 

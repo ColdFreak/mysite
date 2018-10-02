@@ -10,6 +10,7 @@ categories:
   - "math"
 tags:
   - "math"
+  - "backpropagation"
 ---
 
 やりたいことは簡単のニューラルネットワークの逆伝播の仕組みを計算することです。自分の中の整理のためでもあります。

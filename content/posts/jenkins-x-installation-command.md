@@ -2,6 +2,15 @@
 title: "Jenkins XをKubernetesにインストールする際のコマンド"
 date: 2018-07-13T08:17:27+09:00
 draft: false
+disable_comments: false # Optional, disable Disqus comments if true
+authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
+categories:
+  - "kubernetes"
+tags:
+  - "jenkinsx"
+  - "kubernetes"
 ---
 
 

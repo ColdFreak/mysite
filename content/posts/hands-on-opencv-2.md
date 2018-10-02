@@ -2,6 +2,14 @@
 title: "OpenCV ハンズオン 2"
 date: 2018-07-01T12:38:07+09:00
 draft: false
+disable_comments: false # Optional, disable Disqus comments if true
+authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
+categories:
+  - "computer vision"
+tags:
+  - "opencv"
 ---
 
 
