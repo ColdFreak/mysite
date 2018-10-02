@@ -10,6 +10,7 @@ categories:
   - "math"
 tags:
   - "math"
+  - "sigmoid"
 ---
 
 
