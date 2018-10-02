@@ -46,3 +46,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   social_github = "ColdFreak"
   social_email = "madfrogme@gmail.com"
   social_google_plus = "profileid"
+[Params.sidebar]
+  home = "right"
+  list = "left"
+  widgets = ["search", "categories", "taglist", "social"]
