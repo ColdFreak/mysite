@@ -50,3 +50,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   home = "right"
   list = "left"
   widgets = ["search", "categories", "taglist", "social"]
+
+[Params.widgets.social]
+  linkedin = "wang-zhijun-4503309a"
