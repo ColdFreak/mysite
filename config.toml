@@ -41,7 +41,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   # Enable "Social" widget, if any of "social_*" set a value
   social_facebook = "username"
   social_twitter = "username"
-  social_linkedin = "username"
+  social_linkedin = "wang-zhijun-4503309a"
   social_telegram = "username"
   social_github = "ColdFreak"
   social_email = "madfrogme@gmail.com"
