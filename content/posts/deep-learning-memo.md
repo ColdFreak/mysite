@@ -92,6 +92,11 @@ Always use R2 adjusted rather than the regular R2 to assess the fit of a multipl
 
 - The coefficient of an x variable in a multiple regression model is the amount by which y changes if that x variable increases by one unit and the values of all other x variables in the model don’t change. So basically, you’re looking at the marginal contribution of each x variable when you hold the other vari- ables in the model constant.
 
+- The `bootstrap method` is a statistical technique for estimating quantities about a population by averaging estimates from multiple small data samples. There are two parameters that must be chosen when performing the bootstrap: 1) the size of the sample and 2) the number of repetitions of the procedure to perform. [link](https://machinelearningmastery.com/a-gentle-introduction-to-the-bootstrap-method/)
+
+
+
+
 
 
 
