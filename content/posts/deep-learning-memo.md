@@ -28,6 +28,7 @@ $$
 
 - t-Distributed Stochastic Neighbor Embedding (`t-SNE`) is a non-linear technique for dimensionality reduction that is particularly well suited for the visualization of high-dimensional datasets. It is extensively applied in image processing, NLP, genomic data and speech processing. 
 
+- `Linear Discriminant Analysis` (LDA) is actually a classification algorithm, but dur‐ ing training it learns the most discriminative axes between the classes, and these axes can then be used to define a hyperplane onto which to project the data. The benefit is that the projection will keep classes as far apart as possible, so **LDA is a good technique to reduce dimensionality before running another classification algorithm such as an SVM classifier.**
 
 ### Statistic
 
