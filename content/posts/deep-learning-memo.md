@@ -94,10 +94,7 @@ Always use R2 adjusted rather than the regular R2 to assess the fit of a multipl
 
 - The `bootstrap method` is a statistical technique for estimating quantities about a population by averaging estimates from multiple small data samples. There are two parameters that must be chosen when performing the bootstrap: 1) the size of the sample and 2) the number of repetitions of the procedure to perform. [link](https://machinelearningmastery.com/a-gentle-introduction-to-the-bootstrap-method/)
 
-
-
-
-
+- `Sampling with replacement`: Consider a population of potato sacks, each of which has either 12, 13, 14, 15, 16, 17, or 18 potatoes, and all the values are equally likely. Suppose that, in this population, there is exactly one sack with each number. So the whole population has seven sacks. If I sample two with replacement, then I first pick one (say 14). I had a 1/7 probability of choosing that one. Then I replace it. Then I pick another. Every one of them still has 1/7 probability of being chosen. And there are exactly 49 different possibilities here (assuming we distinguish between the first and second.) They are: (12,12), (12,13), (12, 14), (12,15), (12,16), (12,17), (12,18), (13,12), (13,13), (13,14), etc.
 
 
 ### Image processing
