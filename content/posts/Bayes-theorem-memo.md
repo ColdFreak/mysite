@@ -46,3 +46,5 @@ P(A|B) = P(AとBの重なり) / P(B)
 
 
 ![png](../../Bayes-theorem-memo/1.png) 
+
+分母は二つの確率の和で、1) 病気かかって、さらにpositiveと診断される確率 2) 病気かかっていないけどpositiveと診断される確率。
