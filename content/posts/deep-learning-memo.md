@@ -99,6 +99,12 @@ Always use R2 adjusted rather than the regular R2 to assess the fit of a multipl
 
 - The most well-known and loved discrete random variable in statistics is the `binomial`. Binomial means two names and is associated with situations involving two outcomes; for example yes/no, or success/failure (hitting a red light or not, developing a side effect or not). A binomial variable has a binomial distribution.
 
+- The conditions for a binomial random variable are:
+  - The outcome of each trial can be classified as either success or failure.
+  - Each trial is independent of the others.
+  - There is fixed number of trials.
+  - The probability of $p$ of success on each trial remains constant.
+
 
 
 ### Image processing
