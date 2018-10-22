@@ -13,22 +13,20 @@ tags:
 ---
 
 
-
-```R
+{{< highlight r >}}
 # modulus operator (remainder of 5 divided by 2)
 5 %% 2
-```
-
+{{< /highlight >}}
 
 1
 
 
 
-```R
+{{< highlight python >}}
 var <- 10.
 print(var^2)
 print(var/3)
-```
+{{< /highlight >}}
 
     [1] 100
     [1] 3.333333
