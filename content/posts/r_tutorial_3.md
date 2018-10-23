@@ -75,20 +75,11 @@ head(mpg)
 
 
 {{< highlight r >}}
-unique(mpg$class)
+print(unique(mpg$class))
 {{< / highlight >}}
 
-
-<ol class=list-inline>
-	<li>'compact'</li>
-	<li>'midsize'</li>
-	<li>'suv'</li>
-	<li>'2seater'</li>
-	<li>'minivan'</li>
-	<li>'pickup'</li>
-	<li>'subcompact'</li>
-</ol>
-
+    [1] "compact"    "midsize"    "suv"        "2seater"    "minivan"
+    [6] "pickup"     "subcompact"
 
 
 X軸はdisplで、Y軸はhwy,　エンジンが大きいければ、燃費が悪いことがわかる。
