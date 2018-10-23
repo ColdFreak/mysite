@@ -13,7 +13,6 @@ tags:
 ---
 
 
-
 Rの入門
 {{< highlight r >}}
 
@@ -224,7 +223,7 @@ print(sum(our.vect>5))
 
 
 
-{{< highlight r >}}{{< highlight r >}}
+{{< highlight r >}}
 messy.vector <- c(2,4,NA,4)
 # NAでない要素を抽出
 print(messy.vector[!is.na(messy.vector)])
