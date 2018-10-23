@@ -14,9 +14,6 @@ tags:
 
 
 Rの入門
-{{< highlight r >}}
-
-{{< /highlight >}}
 
 {{< highlight r >}}
 # modulus operator (remainder of 5 divided by 2)
@@ -26,6 +23,14 @@ print(5 %% 2)
     [1] 1
 
 
+
+要素は偶数個なので、medianは真ん中の二つの数字の平均を取る
+
+{{< highlight r >}}
+median(c(3, 7, 6, 10, 3, 7))
+{{< / highlight >}}
+
+    [1] 6.5
 
 {{< highlight r >}}
 var <- 10.
