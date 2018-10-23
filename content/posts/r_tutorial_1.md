@@ -13,7 +13,11 @@ tags:
 ---
 
 
-Rの入門1
+
+Rの入門
+{{< highlight r >}}
+
+{{< /highlight >}}
 
 {{< highlight r >}}
 # modulus operator (remainder of 5 divided by 2)
@@ -118,7 +122,7 @@ print(length(our.vect))
 
 {{< highlight r >}}
 our.vect <- c(8, 2, 3)
-# # 二個目の要素、一個目の要素、３個目の要素
+# 二個目の要素、一個目の要素、３個目の要素
 print(our.vect[c(2,1,3)] )
 {{< / highlight >}}
 
@@ -146,7 +150,6 @@ print(another.vector)
 
 
 {{< highlight r >}}
-{{< highlight r >}}{{< highlight r >}}
 another.vector <- c(5,4,3,2,1)
 # 2から4までで要素を取得
 print(another.vector[2:4]) 
