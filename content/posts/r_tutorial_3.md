@@ -17,7 +17,7 @@ tags:
 {{< highlight r >}}
 install.packages("tidyverse")
 install.packages("dplyr")
-```
+{{< / highlight >}}
 
     Updating HTML index of packages in '.Library'
     Making 'packages.html' ... done
@@ -30,7 +30,7 @@ ggplot2 is one of the core members of the `tidyverse` package.
 
 {{< highlight r >}}
 library(tidyverse)
-```
+{{< / highlight >}}
 
     ── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
     ✔ ggplot2 3.0.0     ✔ purrr   0.2.5
