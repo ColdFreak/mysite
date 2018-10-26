@@ -105,7 +105,7 @@ Always use R2 adjusted rather than the regular R2 to assess the fit of a multipl
   - There is fixed number of trials.
   - The probability of $p$ of success on each trial remains constant.
   
-- $p(\gamma | \theta) = \theta^\gamma(1-\theta)^{1-\gamma}$ expresses the `Bernoulli distribution` which is a probability distribution over the two discrete values of $\gamma$, for any fixed value of $\theta$, In particular, the sum of the probabilities is 1. $$\sum_{\gamma}p(\gamma|\theta) = p(\gamma = 1|\theta) + p(\gamma=0|\theta) = \theta + (1-\theta) = 1$
+- $p(\gamma | \theta) = \theta^\gamma(1-\theta)^{1-\gamma}$ expresses the `Bernoulli distribution` which is a probability distribution over the two discrete values of $\gamma$, for any fixed value of $\theta$, In particular, the sum of the probabilities is 1. $\sum_{\gamma}p(\gamma|\theta) = p(\gamma = 1|\theta) + p(\gamma=0|\theta) = \theta + (1-\theta) = 1$
 
 
 
