@@ -111,6 +111,17 @@ print(table(mtcars$carb))
      1  2  3  4  6  8 
      7 10  3 10  1  1 
 
+`quantile()`関数を使って、mpg列の四分位点を調べる
+
+
+{{< highlight r >}}
+print(quantile(mtcars$mpg))
+{{< / highlight >}}
+
+        0%    25%    50%    75%   100% 
+    10.400 15.425 19.200 22.800 33.900 
+
+
 
 ### airqualityデータセット
 
