@@ -129,6 +129,17 @@ boxplot(mtcars$mpg)
 
 ![png](../../r_tutorial_2/1.png) 
 
+mpg列の分散と標準偏差を求める。
+
+
+{{< highlight r >}}
+print(var(mtcars$mpg))
+print(sd(mtcars$mpg))
+{{< / highlight >}}
+
+    [1] 36.3241
+    [1] 6.026948
+
 
 
 ### airqualityデータセット
