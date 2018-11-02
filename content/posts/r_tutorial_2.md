@@ -122,6 +122,14 @@ print(quantile(mtcars$mpg))
     10.400 15.425 19.200 22.800 33.900 
 
 
+`boxplot`で簡単に箱ひげ図を作成することができる。
+{{< highlight r >}}
+boxplot(mtcars$mpg)
+{{< / highlight >}}
+
+![png](../../r_tutorial_2/1.png) 
+
+
 
 ### airqualityデータセット
 
