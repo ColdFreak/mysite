@@ -172,6 +172,15 @@ print(sd(mtcars$mpg))
     [1] 6.026948
 
 
+選択された各列に対して分散を計算する。
+
+{{< highlight r >}}
+print(mtcars %>% select(mpg, disp) %>%  summarise_all(funs(var)))
+{{< / highlight >}}
+
+          mpg    disp
+    1 36.3241 15360.8
+
 
 ### airqualityデータセット
 
