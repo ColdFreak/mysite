@@ -338,3 +338,46 @@ print(table(mtcars$carb) / length(mtcars$carb))
           1       2       3       4       6       8 
     0.21875 0.31250 0.09375 0.31250 0.03125 0.03125 
 
+
+11と12月のフライトを表示する。
+カッコをつけることによって、結果を`nov_dec`に保存して、さらに表示する。
+{{< highlight r >}}
+library(nycflights13)
+(nov_dec <- filter(flights, month %in% c(11, 12)))
+{{< / highlight >}}
+
+
+`distance`の大きい順でソートする。
+
+{{< highlight r >}}
+arrange(flights, desc(distance))
+{{< / highlight >}}
+
+
+`year`から`day`までの列を除去して、表示する。
+
+{{< highlight r >}}
+select(flights, -(year:day))
+{{< / highlight >}}
+
+`dest`と`distance`列を先頭に移動して、表示する。
+{{< highlight r >}}
+select(flights, dest, distance, everything())
+{{< / highlight >}}
+
+
+`tailnum`列名を`tail_num`に変更する。
+{{< highlight r >}}
+rename(flights, tail_num= tailnum)
+{{< / highlight >}}
+
+`mutate`を使って、新しい変数`added_colume`を追加する.
+{{< highlight r >}}
+mutate(flights, added_colume = distance + 60)
+{{< / highlight >}}
+
+
+`transmute`を使って新しい作った変数`added_colume`だけを残して表示する。
+{{< highlight r >}}
+transmute(flights, added_colume = distance + 60)
+{{< / highlight >}}
