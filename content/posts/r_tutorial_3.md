@@ -172,3 +172,14 @@ ggplot(data = mpg) +
 ![png](../../r_tutorial_3/output_18_2.png)
 
 
+ggplot2 includes eight themes by default. Many more are included in add-on packages like ggthemes, by Jef‐ frey Arnold.
+
+They are `theme_bw()`, `theme_light()`, `theme_classic()`, `theme_linedraw()`, `theme_dark()`, `theme_minimal()`, `theme_gray()`and `theme_void()`
+
+{{< highlight r >}}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy)) + 
+    geom_point(aes(color = class)) + 
+    geom_smooth(se = FALSE) + 
+    theme_dark()
+{{< / highlight >}}
