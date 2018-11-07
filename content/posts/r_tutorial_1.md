@@ -382,3 +382,7 @@ print(apply(a3.matrix, 2, mean) )
     [1] 3 4 5
 
 
+Data frameのwhen変数に`10/2`のような文字列を日付に変更する
+{{< highlight r >}}
+mutate(df, when = as.Date(when, "%m/%d")) # 2018-10-02のような日付になる。
+{{< /highlight >}}
