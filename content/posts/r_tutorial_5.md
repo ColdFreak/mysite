@@ -14,7 +14,6 @@ tags:
 
 
 We flip the coin 30 times and observe 10 head. We can use R to tell us the probability of getting 10 or fewer heads using the `pbinom` function.
-Let's say there are only 10,000 US women.
 
 
 {{< highlight r >}}
@@ -31,6 +30,7 @@ $$\binom{n}{k}p^k(1-p)^{n-k}$$
 
 
 `rnorm` is the R function that simulates random variates having a specified normal distribution. 
+Let's say there are only 10,000 US women.
 
 
 {{< highlight r >}}
