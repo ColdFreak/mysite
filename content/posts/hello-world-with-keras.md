@@ -12,9 +12,6 @@ tags:
   - "keras"
 ---
 
-KerasでMNIST手書き数字を分類する
-
-
 KerasでMNIST手書き数字を分類する。
 
 {{< highlight python >}}
