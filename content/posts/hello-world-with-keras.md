@@ -14,63 +14,116 @@ tags:
 
 KerasでMNIST手書き数字を分類する
 
-```
-In [1]: from keras.datasets import mnist
-Using TensorFlow backend.
-(
-In [2]: (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
-In [3]: from keras import models
+KerasでMNIST手書き数字を分類する。
 
-In [4]: from keras import layers
+```python
+from keras.datasets import mnist
+from keras import models
+from keras import layers
+from keras.utils import to_categorical
+import matplotlib.pyplot as plt
 
-In [5]: network = models.Sequential()
+
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+
+
+network = models.Sequential()
 
 # 最初の隠れ層は512を設定する, 活性化関数をReluを設定する
-In [6]: network.add(layers.Dense(512, activation="relu", input_shape=(28*28,)))
+network.add(layers.Dense(512, activation="relu", input_shape=(28*28,)))
 
 # 出力10個、0-9まで１０個の出力あるから
-In [7]: network.add(layers.Dense(10, activation="softmax"))
+network.add(layers.Dense(10, activation="softmax"))
 
-In [9]: network.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
+network.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
 
-In [10]: train_images = train_images.reshape((60000, 28*28))
+train_images = train_images.reshape((60000, 28*28))
+train_images = train_images.astype("float32") / 255
 
-# [0,1]に収まるように正規化する
-In [11]: train_images = train_images.astype("float32") / 255
-
-In [12]: test_images = test_images.reshape((10000, 28*28))
-
-In [13]: test_images = test_images.astype("float32") / 255
-
-In [14]: from keras.utils import to_categorical
+test_images = test_images.reshape((10000, 28*28))
+test_images = test_images.astype("float32") / 255
 
 # 整数のクラスベクトルから2値クラスの行列への変換します．
 # https://keras.io/ja/utils/#to_categorical
-In [15]: train_labels = to_categorical(train_labels)
-
-In [16]: test_labels = to_categorical(test_labels)
+categorical_train_labels = to_categorical(train_labels)
+categorical_test_labels = to_categorical(test_labels)
 
 # fit the model to its training data
 # the network iterate on the training data in mini-batches of 128 samples, 5 times over
 # each iteration over all the training data is called an epoch
-In [17]: network.fit(train_images, train_labels, epochs=5, batch_size=128)
-Epoch 1/5
-2018-09-17 17:54:52.424286: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-60000/60000 [==============================] - 2s 33us/step - loss: 0.2556 - acc: 0.9257
-Epoch 2/5
-60000/60000 [==============================] - 2s 30us/step - loss: 0.1026 - acc: 0.9700
-Epoch 3/5
-60000/60000 [==============================] - 2s 30us/step - loss: 0.0664 - acc: 0.9797
-Epoch 4/5
-60000/60000 [==============================] - 2s 30us/step - loss: 0.0493 - acc: 0.9853
-Epoch 5/5
-60000/60000 [==============================] - 2s 30us/step - loss: 0.0369 - acc: 0.9890
-Out[17]: <keras.callbacks.History at 0x104f08d30>
-
-In [18]: test_loss, test_acc = network.evaluate(test_images, test_labels)
-10000/10000 [==============================] - 0s 22us/step
-
-In [19]: print('test_acc:', test_acc)
-test_acc: 0.9806
+history = network.fit(train_images, categorical_train_labels, epochs=5, batch_size=128)
+test_loss, test_acc = network.evaluate(test_images, categorical_test_labels)
+print('test_acc:', test_acc) 
 ```
+
+```
+Using TensorFlow backend.
+```
+
+```
+Epoch 1/5
+60000/60000 [==============================] - 9s 142us/step - loss: 0.2532 - acc: 0.9277
+Epoch 2/5
+60000/60000 [==============================] - 10s 165us/step - loss: 0.1043 - acc: 0.9689
+Epoch 3/5
+60000/60000 [==============================] - 8s 131us/step - loss: 0.0696 - acc: 0.9795
+Epoch 4/5
+60000/60000 [==============================] - 9s 158us/step - loss: 0.0502 - acc: 0.9851
+Epoch 5/5
+60000/60000 [==============================] - 8s 139us/step - loss: 0.0374 - acc: 0.9884
+10000/10000 [==============================] - 1s 60us/step
+test_acc: 0.9801
+```
+
+`to_categorical`の役割を見てみる。実際に`One Hot Encode`のことをやっている。
+
+```python
+# train_labels[0]は 5
+digit = train_labels[0]
+categorical_digit = to_categorical(digit)
+print('{}: {}'.format(digit, categorical_digit))
+
+# train_labels[2]は 4
+digit = train_labels[2]
+categorical_digit = to_categorical(digit)
+print('{}: {}'.format(digit, categorical_digit))
+
+```
+
+```
+5: [0. 0. 0. 0. 0. 1.]
+4: [0. 0. 0. 0. 1.]
+```
+
+`network.compile(..., metrics=["accuracy"])`のオプションにモデルの評価は[`accuracy`](https://github.com/keras-team/keras/blob/d8b226f26b35348d934edb1213061993e7e5a1fa/keras/engine/training.py#L651)を書いてある。多クラス分類の問題なので、実際[categorical_accuracy](https://github.com/keras-team/keras/blob/c2e36f369b411ad1d0a40ac096fe35f73b9dffd3/keras/metrics.py#L13)のことを指している。
+
+```
+network.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["categorical_accuracy"])
+```
+
+`network.fit()`関数の戻り値`history`について、調べてみる。`acc`だんだん上がっていることを図で確認できる。逆に`loss`損失値はだんだん下がることも確認できる。
+
+```python
+print(history.history.keys())
+print(history.history["loss"])
+print(history.history["acc"])
+
+```
+
+```
+dict_keys(['loss', 'acc'])
+[0.2532248511552811, 0.1042881952504317, 0.06958325177530447, 0.05017872037192186, 0.037415427959462004]
+[0.9277333333333333, 0.9689499999682109, 0.9794833333015441, 0.9850999999682108, 0.9883833333333333]
+```
+
+
+
+```python
+for key in history.history.keys():
+    plt.plot(range(1, 6), history.history[key])
+    
+plt.legend(list(history.history.keys()), loc="upper left")
+plt.show()
+```
+![png](../../hello-world-with-keras/1.png) 
