@@ -135,3 +135,9 @@ Dropoutを利用する場合隠れそうの後ろにDropout rateを追加する�
 network.add(layers.Dense(512, activation="relu", input_shape=(28*28,)))
 network.add(layers.Dropout(0.2))
 ```
+
+今回モデルを学習する際のoptimizerが[`rmsprop`](https://keras.io/optimizers/#rmsprop)を使っていますが、もし[`sgd`](https://keras.io/optimizers/#sgd)を使うと、`epoch`は同じ5で設定する場合、精度は90%ぐらいにしかできない。同じ精度を得るためにはepochの回数をもっとあげる必要がある。
+
+```
+network.compile(optimizer="sgd", loss="categorical_crossentropy", metrics=["accuracy"])
+```
