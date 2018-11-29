@@ -127,3 +127,11 @@ plt.show()
 {{< /highlight >}}
 
 ![png](../../hello-world-with-keras/1.png) 
+
+Dropoutを利用する場合隠れそうの後ろにDropout rateを追加するだけ。
+
+```
+# 最初の隠れ層は512を設定する, 活性化関数をReluを設定する
+network.add(layers.Dense(512, activation="relu", input_shape=(28*28,)))
+network.add(layers.Dropout(0.2))
+```
