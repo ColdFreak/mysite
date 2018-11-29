@@ -17,7 +17,8 @@ KerasでMNIST手書き数字を分類する
 
 KerasでMNIST手書き数字を分類する。
 
-```python
+{{< highlight python >}}
+
 from keras.datasets import mnist
 from keras import models
 from keras import layers
@@ -55,13 +56,10 @@ categorical_test_labels = to_categorical(test_labels)
 history = network.fit(train_images, categorical_train_labels, epochs=5, batch_size=128)
 test_loss, test_acc = network.evaluate(test_images, categorical_test_labels)
 print('test_acc:', test_acc) 
-```
+{{< /highlight >}}
 
 ```
 Using TensorFlow backend.
-```
-
-```
 Epoch 1/5
 60000/60000 [==============================] - 9s 142us/step - loss: 0.2532 - acc: 0.9277
 Epoch 2/5
@@ -78,7 +76,9 @@ test_acc: 0.9801
 
 `to_categorical`の役割を見てみる。実際に`One Hot Encode`のことをやっている。
 
-```python
+{{< highlight python >}}
+
+
 # train_labels[0]は 5
 digit = train_labels[0]
 categorical_digit = to_categorical(digit)
@@ -88,8 +88,7 @@ print('{}: {}'.format(digit, categorical_digit))
 digit = train_labels[2]
 categorical_digit = to_categorical(digit)
 print('{}: {}'.format(digit, categorical_digit))
-
-```
+{{< /highlight >}}
 
 ```
 5: [0. 0. 0. 0. 0. 1.]
@@ -104,12 +103,12 @@ network.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["
 
 `network.fit()`関数の戻り値`history`について、調べてみる。`acc`だんだん上がっていることを図で確認できる。逆に`loss`損失値はだんだん下がることも確認できる。
 
-```python
+{{< highlight python >}}
+
 print(history.history.keys())
 print(history.history["loss"])
 print(history.history["acc"])
-
-```
+{{< /highlight >}}
 
 ```
 dict_keys(['loss', 'acc'])
@@ -119,11 +118,12 @@ dict_keys(['loss', 'acc'])
 
 
 
-```python
+{{< highlight python >}}
 for key in history.history.keys():
     plt.plot(range(1, 6), history.history[key])
     
 plt.legend(list(history.history.keys()), loc="upper left")
 plt.show()
-```
+{{< /highlight >}}
+
 ![png](../../hello-world-with-keras/1.png) 
