@@ -2,8 +2,7 @@
 title: "Callbackを利用して、Tensorflowのトレーニングを停止する"
 date: "2019-09-27T13:53:13+09:00"
 draft: false
-description: "Example article description"
-thumbnail: "img/placeholder.jpg" # Optional, thumbnail
+readmore: true # Show "Read more" button in list if true
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: true # Optional, enable Table of Contents for specific post
